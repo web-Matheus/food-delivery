@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f7f7;
+}
+:root{
+  --red:#ff3838;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    z-index: 1000;
+}
+nav{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+header .active{
+    display: block;
+    position: absolute;
+    top: 10%;
+    max-width: 100%;
+    background-color: #f7f7f7;
+}
+nav a{
+    text-decoration: none;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    display: block;
+    border: .2rem solid rgba(0,0,0,.1);
+    border-left: .5rem solid var(--red);
+}
+
+/* section main */
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    margin: 1.5rem;
+    padding: 1.5rem;  
+}
+section figure img{
+    flex:1  40rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* our special dishes */
+
+.special-dishes{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.special-dishes div{
+    border: .2rem solid #222;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+    
+}
+.special-dishes div h4{
+    margin: 1.5rem;
+}
